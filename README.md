@@ -42,6 +42,7 @@ script.js:
 # Usage
 To analyze a BMP image, simply upload the image file using the web interface provided at http://localhost:8000.
 
-# Sample Output
+# Sample Output Screenshot
 
-![alt text](https://ibb.co/fxV5rnS)
+
+![image not found](https://i.ibb.co/qrLfmWn/1.png)
