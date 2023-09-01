@@ -1,6 +1,4 @@
 # Bitmap Image Analysis with PHP
-A project intended to display the top RGB pixels in a Bitmap image file using no external libraries.
-
 
 Welcome to the Bitmap Image Analysis project! This repository aims to showcase a simple and efficient way to extract the top RGB pixels from a Bitmap image file without relying on external libraries. The server-side scripting language used in this project is PHP, and the analysis is performed based on the BMP file format.
 
