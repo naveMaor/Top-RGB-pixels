@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ERROR | E_PARSE);
+
+
 $targetDirectory = 'uploads/';
 $chunkNumber = $_POST['currentChunk'];
 $totalChunks = $_POST['totalChunks'];
@@ -105,7 +108,6 @@ function get_pixel_value_from_bmp_file($file, $x, $y)
     return $RGB;
 }
 
-
 function get_bmp_image_width_and_height($imageFile){
     fseek($imageFile, 18); // Move to the position where width and height are stored
     $widthBytes = fread($imageFile, 4);
@@ -121,7 +123,7 @@ function get_bmp_image_width_and_height($imageFile){
     return array(
         "width" => $width,
         "height" => $height
-        );
+    );
 }
 
 function get_top_pixel_rgb_from_file_path($filePath, $numColors) {
@@ -198,9 +200,6 @@ function setResponseCode($code, $reason = null) {
         header(trim("HTTP/1.0 $code $reason"));
 
 }
-
-
-
 
 
 ?>

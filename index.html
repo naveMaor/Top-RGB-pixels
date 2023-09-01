@@ -170,6 +170,7 @@
         const CHUNK_SIZE = 1024 * 1024; // 1MB
         const totalChunks = Math.ceil(file.size / CHUNK_SIZE);
         let currentChunk = 0;
+        showLoading();
 
         while (currentChunk < totalChunks) {
             const start = currentChunk * CHUNK_SIZE;
@@ -187,17 +188,16 @@
                 body: formData,
             });
 
+
             const responseStatus = response.status;
             console.log(responseStatus);
 
 
             if (responseStatus !== 200 && responseStatus !== 201) {
+                hideLoading();
                 const message = response.statusText;
                 alert('Upload failed. \n' + message);
                 return;
-            }
-            if (responseStatus === 200) {
-                showLoading();
             }
             if (responseStatus === 201) {
                 // Hide the loading indicator
