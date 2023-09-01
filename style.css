@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+#container {
+    border: 2px solid #ddd;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.color-box-container {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.color-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    border: 2px solid black;
+}
+
+.color-label {
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+#uploadButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resultsContainer{
+    display: flex;
+    flex-direction: row;
+}
+#imageContainer{
+    margin-left: 35px;
+}
+#Uploaded-image{
+    max-height: 250px;
+    border: 2px solid black;
+}
+
+
+.loading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.loading-spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid #ffffff;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-container p {
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 16px;
+}
+#explainText{
+    display: none;
+}
+
