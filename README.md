@@ -31,9 +31,13 @@ php -S localhost:8000
 The project structure is designed to be simple and easy to understand:
 
 upload.php: This PHP script handles the uploading and processing of BMP image files. It interacts with utills.php to perform image analysis.
+
 utills.php: A PHP utility script that contains functions and helper methods used for image analysis. It assists upload.php in processing BMP images effectively.
+
 index.html: The main HTML file that provides the user interface for uploading BMP image files. Users can select and upload an image through this interface.
+
 style.css: This CSS file contains styling rules to enhance the visual appearance of the index.html user interface. It helps make the web application more user-friendly.
+
 script.js: A JavaScript file that adds interactivity to the web application. It may be used for client-side tasks such as validating user input and enhancing the user experience.
 
 # Usage
