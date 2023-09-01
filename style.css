@@ -5,6 +5,18 @@ body {
     background-color: #f7f7f7;
 }
 
+#inputSection{
+    margin-bottom: 25px;
+}
+
+#pageTitle{
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
 #container {
     border: 2px solid #ddd;
     padding: 20px;
@@ -43,10 +55,11 @@ body {
 
 #resultsContainer{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 #imageContainer{
-    margin-left: 35px;
+    margin: 0 auto;
 }
 #Uploaded-image{
     max-height: 250px;
@@ -88,5 +101,6 @@ body {
 }
 #explainText{
     display: none;
+    margin-bottom: 10px;
 }
 
