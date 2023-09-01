@@ -20,6 +20,7 @@ $targetDirectory = 'uploads/';
 $chunkNumber = $_POST['currentChunk'];
 $totalChunks = $_POST['totalChunks'];
 $sha256Hash = $_POST['sha256Hash'];
+$numberOfColors = $_POST['numberOfColors'];
 $chunkFile = $_FILES['chunk']['tmp_name'];
 
 
@@ -36,7 +37,7 @@ if ($is_file_saved) {
 
     if ($isValidationPassed) {
         // Extract the top N RGB colors from the BMP image
-        $topColors = get_top_pixel_rgb_from_file_path($targetFile, 5);
+        $topColors = get_top_pixel_rgb_from_file_path($targetFile, $numberOfColors);
 
         // Respond with an HTTP 201 status code and JSON-encoded top colors
         http_response_code(201);
